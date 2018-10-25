@@ -1,13 +1,21 @@
 animalArray=["cat","dog","bird"];
 
 //$(".animal-btn").on("click", function(){
-$(".animal-btn").click(function(){    
-   // alert( "Handler for .click() called." );
-    var x = $(this).data("animal");
-    //alert("clicked button");
-    displayAnimal(x);
-
+$("#button-div").on("click", ".animal-btn", function(){    
+    // alert( "Handler for .click() called." );
+        var x = $(this).data("animal");
+        //alert("clicked button");
+        displayAnimal(x);
+    
 }); 
+
+// $(".animal-btn").click(function(){    
+//    // alert( "Handler for .click() called." );
+//     var x = $(this).data("animal");
+//     //alert("clicked button");
+//     displayAnimal(x);
+
+// }); 
 
 function displayAnimal(x){
     
